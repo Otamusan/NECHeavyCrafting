@@ -1,0 +1,16 @@
+[
+{
+  "modid": "necheavycrafting",
+  "name": "NEC Heavy Crafting",
+  "description": "More stimulation",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Otamusan"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
