@@ -7,7 +7,6 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import otamusan.nechc.common.CommonProxy;
-import otamusan.nechc.common.RecipeReplacer;
 
 @Mod(modid = NECHeavyCrafting.MOD_ID, name = NECHeavyCrafting.MOD_NAME, version = NECHeavyCrafting.MOD_VERSION, acceptedMinecraftVersions = NECHeavyCrafting.MOD_ACCEPTED_MC_VERSIONS, useMetadata = true)
 
@@ -33,7 +32,5 @@ public class NECHeavyCrafting {
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
 		proxy.postInit();
-		RecipeReplacer.replaceNECRecipe();
-		RecipeReplacer.replaceAll();
 	}
 }

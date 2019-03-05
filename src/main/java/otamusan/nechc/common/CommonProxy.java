@@ -1,6 +1,7 @@
 package otamusan.nechc.common;
 
 import net.minecraft.world.World;
+import otamusan.nechc.common.heavycraft.RecipeReplacer;
 
 public class CommonProxy {
 
@@ -11,6 +12,8 @@ public class CommonProxy {
 	}
 
 	public void postInit() {
+		RecipeReplacer.replaceNECRecipe();
+		RecipeReplacer.replaceAll();
 	}
 
 	public World getClientWorld() {

@@ -1,4 +1,4 @@
-package otamusan.nechc.common;
+package otamusan.nechc.common.heavycraft;
 
 import java.util.ArrayList;
 

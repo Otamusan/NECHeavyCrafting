@@ -16,6 +16,7 @@ public class ClientProxy extends otamusan.nechc.common.CommonProxy {
 	}
 
 	public void postInit() {
+		super.postInit();
 	}
 
 	@Override
