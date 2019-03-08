@@ -1,3 +1,16 @@
+repositories {
+  maven {
+    // location of the maven that hosts JEI files
+    name = "Progwml6 maven"
+    url = "http://dvs1.progwml6.com/files/maven"
+  }
+  maven {
+    // location of a maven mirror for JEI files, as a fallback
+    name = "ModMaven"
+    url = "modmaven.k-4u.nl"
+  }
+}
+
 buildscript {
     repositories {
         jcenter()
@@ -17,6 +30,8 @@ sourceCompatibility = targetCompatibility = '1.8'
 
 dependencies {
   	compile files('libs/NotEnoughCompression-1.12.2-1.0.0-dev.jar')
+  	deobfProvided "mezz.jei:jei_1.12.2:${version_jei}:api"
+  	runtime "mezz.jei:jei_1.12.2:${version_jei}"
 }
 compileJava {
     sourceCompatibility = targetCompatibility = '1.8'
