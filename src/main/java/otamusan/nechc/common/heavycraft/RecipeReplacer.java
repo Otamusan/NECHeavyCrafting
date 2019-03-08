@@ -9,6 +9,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 import net.minecraftforge.oredict.ShapelessOreRecipe;
+import otamusan.nec.common.CommonProxy;
 import otamusan.nec.common.Lib;
 
 public class RecipeReplacer {
@@ -35,5 +36,9 @@ public class RecipeReplacer {
 		IRecipe recipe = new CompressedHeavyCrafting();
 		recipe.setRegistryName(new ResourceLocation(Lib.MOD_ID, "compressedcrafting"));
 		ForgeRegistries.RECIPES.register(recipe);
+
+		ForgeRegistries.RECIPES.register(CommonProxy.compression);
+
+		ForgeRegistries.RECIPES.register(CommonProxy.uncompression);
 	}
 }
